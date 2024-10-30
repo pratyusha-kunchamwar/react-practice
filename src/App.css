@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the board vertically */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* 8 columns, each 50px wide */
+    grid-template-rows: repeat(8, 50px); /* 8 rows, each 50px tall */
+    gap: 1px; /* Space between boxes */
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc; /* Border around each box */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove outline on click */
+  }
+  
+  .white {
+    background-color: #ffffff; /* White color */
+  }
+  
+  .black {
+    background-color: #000000; /* Black color */
+  }
+  
+  .box:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Change color on hover */
+  }
+  
+  .selected {
+    background-color: red; /* Highlighted diagonal cells */
+  }
+  
+  .clicked {
+    background-color: yellow; /* Clicked cell */
+  }
+  
